@@ -1,1 +1,55 @@
-
+{
+  "global": {
+    "scrollsDelivered": 64,
+    "scrollGoal": 100,
+    "inventoryOwned": 147,
+    "inventoryNeed": 200,
+    "watchTerritories": 7,
+    "redTerritories": 5
+  },
+  "activeBattle": {
+    "regionId": "yakamoz",
+    "regionName": "Yakamoz Şehri",
+    "type": "kuşatma",
+    "status": "under_siege",
+    "deadline": "2026-03-10T18:00:00Z",
+    "progress": 64,
+    "goal": 100,
+    "threat": "Yakamoz şehrinin düşmesi",
+    "bonus": "Savunma başarırsak XP +20%",
+    "nextTarget": "Gölgeli Ovalar",
+    "reward": {
+      "tiers": [
+        { "range": "1-3", "items": ["Gözcü Pelerini", "Kritik Savunma Efekti"] },
+        { "range": "4-10", "items": ["Gözcü Sandığı", "500 Altın"] }
+      ]
+    },
+    "failPenalty": "Tüm oyunculara 24 saat %10 vergi"
+  },
+  "battles": [
+    {
+      "id": "yakamoz-siege",
+      "regionId": "yakamoz",
+      "type": "kuşatma",
+      "requiredScrolls": 100,
+      "reward": "XP +20% & Gözcü Sandığı",
+      "failDebuff": "%10 vergi",
+      "status": "active"
+    },
+    {
+      "id": "golemlands-counter",
+      "regionId": "golemlands",
+      "type": "saldırı",
+      "requiredScrolls": 60,
+      "reward": "Legendary loot + Buff",
+      "failDebuff": "%5 saldırı gücü düşer",
+      "status": "upcoming"
+    },
+    {
+      "id": "scarletfields-ambush",
+      "regionId": "scarletfields",
+      "type": "pusu",
+      "requiredScrolls": 40,
+      "reward": "Arşiv Mührü parçası",
+      "failDebuff": "Mob spawn +%15",
+      "status": "
